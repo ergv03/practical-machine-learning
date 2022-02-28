@@ -1,6 +1,8 @@
 ---
 title: "Practical Machine Learning Project"
 output: html_document
+author: "Elton Vieira"
+date: February 2022
 ---
 
 ```{r setup, include=FALSE}
@@ -22,13 +24,13 @@ library(lattice)
 library(ggplot2)
 library(caret)
 library(rattle)
-set.seed(1234)
+set.seed(42)
 ```
 
 ``` {r data_loading}
 
-trainData <- read.csv('/Users/egrochos/Projects/statistics-coursera/practical-machine-learning/pml-training.csv')
-testData <- read.csv('/Users/egrochos/Projects/statistics-coursera/practical-machine-learning/pml-testing.csv')
+trainData <- read.csv('pml-training.csv')
+testData <- read.csv('pml-testing.csv')
 dim(trainData)
 dim(testData)
 
